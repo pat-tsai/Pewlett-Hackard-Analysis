@@ -19,14 +19,14 @@ SELECT DISTINCT ON (r.emp_no) r.emp_no,
 	r.first_name,
 	r.last_name,
 	r.title
-INTO unique_retirement
+INTO unique_titles
 FROM retirement as r
 ORDER BY r.emp_no ASC, r.to_date DESC;
 
 
 -- Retries number of employees about to retire
 SELECT COUNT (DISTINCT t.emp_no), t.title
-INTO retiring_count
+INTO retiring_titles
 FROM unique_retirement AS t
 GROUP BY t.title
 ORDER BY COUNT (t.title) DESC;
