@@ -4,7 +4,17 @@
 - The purpose of this analysis was to determine the number of retiring employees based on which title held/department they worked in to help management better prepare for new hiring. In addition, I also queried to find the number of employees eligible to participiate in a mentorship program, which quickly allows us to find emails of all eligible participants and extend this mentorship offer with just a few clicks.
 
 ## Results:
-![ScreenShots](/Data/query_results/retiring_titles.csv)
+```
+| count | title              | 
+|-------|--------------------| 
+| 29414 | Senior Engineer    | 
+| 28254 | Senior Staff       | 
+| 14222 | Engineer           | 
+| 12243 | Staff              | 
+| 4502  | Technique Leader   | 
+| 1761  | Assistant Engineer | 
+| 2     | Manager            | 
+```
 - Based on the query result above, we can see that the highest number of employees that are eligible to retire are either senior engineers or other senior staff 
 - Conversely, the lowest count is managers, having only 2 eligible for retirement during this time
 - Looking at the entire table above as a whole, it is alarming to see that the number of senior employees potentially leaving soon doubles that of other employees
